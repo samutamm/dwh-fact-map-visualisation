@@ -25,8 +25,6 @@ def get_tuples(fact, year):
             result = [[row['nom'], row[fact]] for row in cursor]
             return result
 
-        # connection is not autocommit by default. So you must commit to save
-        # your changes.
         connection.commit()
     finally:
         connection.close()

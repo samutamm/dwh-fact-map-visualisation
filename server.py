@@ -3,8 +3,6 @@ from dwhConnection import get_tuples
 from flask import Flask, request, send_from_directory, jsonify
 import os
 
-# set the project root directory as the static folder, you can set others.
-#hardcoded = '/Users/samutamminen/Documents/Study/Sorbonne/S2/BI/visualisation'
 app = Flask(__name__, static_url_path='')
 
 @app.route('/js/<path:filename>')
